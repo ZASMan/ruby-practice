@@ -53,3 +53,28 @@ puts "Problem #2"
 
 puts sum
 
+=begin
+	
+Print the numbers 1-100. If the number is a multiple of 3, print "Fizz". If the number is
+a multiple of five, print "buzz". If the number is a multiple of both three and five,
+print "FizzBuzz"
+	
+=end
+
+array = []
+
+(1..100).each do |i|
+	if i % 15 == 0
+		array << "FizzBuzz"
+	elsif i % 3 == 0
+		array << "Fizz"
+	elsif i % 5 == 0
+		array << "Buzz"
+	else
+		array << i
+	end
+end
+
+puts "Problem 3 (FizzBuzz)"
+
+print array
